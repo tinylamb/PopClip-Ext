@@ -2,6 +2,7 @@
 import urllib2
 from lxml import html
 import os
+import re
 import subprocess
 from os.path import expanduser
 #test_url = 'http://www.douban.com/people/zhangjiawei/notes'
@@ -47,9 +48,11 @@ def fetch(url):
     return data_str
 
 def download(url , home):
+    pattern = re.compile(r'(?<=people/).*(?=/notes)')
     url = url.strip()
+    author = '/' + pattern.search(url).group()
     info = fetch(url)
-    info_txt = open(home + '/info.txt','w')
+    info_txt = open(home + author +'.txt','w')
     for i in info:
         info_txt.write(i + '\n')
     info_txt.close()
