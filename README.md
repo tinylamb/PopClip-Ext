@@ -7,7 +7,8 @@
 参考
  
 1. [Create Your Own Custom Extension for PopClip](http://computers.tutsplus.com/tutorials/create-your-own-custom-extension-for-popclip--mac-50637)
-2. [gitRepo for popclipext](https://github.com/hzlzh/PopClip-Extensions)
+2. [author's PopClip-Extensions](https://github.com/pilotmoon/PopClip-Extensions)
+3. [popclipext branch](https://github.com/hzlzh/PopClip-Extensions)
 
 
 注意事项
