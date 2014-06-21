@@ -5,10 +5,12 @@
 	<key>Actions</key>
 	<array>
 		<dict>
-			<key>After</key>
+                        <key>After</key>
 			<string>paste-result</string>
-			<key>Image File</key>
-			<string>doubandiary.png</string>
+                        <key>Requirements</key>
+			<array>
+				<string>httpurl</string>
+			</array>
 			<key>Regular Expression</key>
 			<string>www.douban.com/people/.+/notes</string>
 			<key>Script Interpreter</key>
@@ -17,6 +19,8 @@
 			<string>doubandiary.py</string>
 			<key>Title</key>
 			<string>Douban Diary</string>
+			<key>Image File</key>
+			<string>doubandiary.png</string>
 		</dict>
 	</array>
 	<key>Extension Description</key>

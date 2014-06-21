@@ -2,11 +2,8 @@
 import urllib2
 from lxml import html
 import os
-url = os.environ['POPCLIP_TEXT']
-home = os.getenv("HOME")
-#from os.path import expanduser
-#test_url = 'http://www.douban.com/people/tinylamb/notes'
-#home = expanduser('~')
+from os.path import expanduser
+#test_url = 'http://www.douban.com/people/zhangjiawei/notes'
 
 def fetch(url):
     headers = {'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'}
@@ -48,17 +45,20 @@ def fetch(url):
         data_str.append(data)
     return data_str
 
-def download(url):
-    if ('http' not in url):
-        url = 'http://' + url
+def download(url , home):
+    url = url.strip()
     info = fetch(url)
     info_txt = open(home + '/info.txt','w')
     for i in info:
         info_txt.write(i + '\n')
     info_txt.close()
+    print "Mission Complete"
 
 if __name__ == '__main__':
-    download(url)
+    #home = os.getenv("HOME") // why return None?
+    home = expanduser('~')
+    url = os.getenv('POPCLIP_TEXT')
+    download(url ,home)
     
 
 
