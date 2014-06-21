@@ -2,6 +2,7 @@
 import urllib2
 from lxml import html
 import os
+import subprocess
 from os.path import expanduser
 #test_url = 'http://www.douban.com/people/zhangjiawei/notes'
 
@@ -52,10 +53,10 @@ def download(url , home):
     for i in info:
         info_txt.write(i + '\n')
     info_txt.close()
-    print "Mission Complete"
+    subprocess.call(["open","-R",home]) # open target dir
 
 if __name__ == '__main__':
-    #home = os.getenv("HOME") // why return None?
+    #home = os.getenv("HOME")  why return None?
     home = expanduser('~')
     url = os.getenv('POPCLIP_TEXT')
     download(url ,home)
