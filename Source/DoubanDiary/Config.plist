@@ -13,12 +13,15 @@
 	<key>Actions</key>
 	<array>
 		<dict>
+                        <!-- 
+                         The action will appear only if the text matches the regexRequirements || Regex 
                         <key>Requirements</key>
-			<array>
-				<string>httpurl</string>
-			</array>
+                        <array>
+                            <string>httpurl</string>
+                        </array>
+                        -->
                         <key>Regular Expression</key>
-                        <string>www.douban.com/people/.+/notes</string>
+                        <string>.*www.douban.com/people/.+/notes</string>
 			<key>Script Interpreter</key>
 			<string>/usr/bin/python</string>
 			<key>Shell Script File</key>
