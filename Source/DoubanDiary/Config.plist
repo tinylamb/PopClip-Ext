@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Extension Description</key>
+	<string>download douban diary info</string>
+	<key>Extension Identifier</key>
+	<string>popclip.extension.doubandiary</string>
+	<key>Extension Name</key>
+	<string>Douban Diary</string>
+	<key>Version</key>
+	<integer>1</integer>
 	<key>Actions</key>
 	<array>
 		<dict>
@@ -9,8 +17,8 @@
 			<array>
 				<string>httpurl</string>
 			</array>
-			<key>Regular Expression</key>
-			<string>www.douban.com/people/.+/notes</string>
+                        <key>Regular Expression</key>
+                        <string>www.douban.com/people/.+/notes</string>
 			<key>Script Interpreter</key>
 			<string>/usr/bin/python</string>
 			<key>Shell Script File</key>
@@ -21,13 +29,5 @@
 			<string>doubandiary.png</string>
 		</dict>
 	</array>
-	<key>Extension Description</key>
-	<string>download douban diary info</string>
-	<key>Extension Identifier</key>
-	<string>popclip.extension.doubandiary</string>
-	<key>Extension Name</key>
-	<string>Douban Diary</string>
-	<key>Version</key>
-	<integer>1</integer>
 </dict>
 </plist>

@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+#why script failed but manual success
 help()
 {
 cat << HELP
@@ -17,6 +18,9 @@ exit 0
 if [ $# -eq 0 ] || [ $1 = "-h" ]; then
     help
 else
-    cp -r $1 ../Downloads/$1.popclipext
-    zip -r ../Downloads/$1.popclipextz $1
+    cp -r $1 ../Downloads/$1
+    cd ../Downloads
+    mv $1 $1.popclipext
+    zip -r $1.popclipext.zip $1.popclipext
+    mv $1.popclipext.zip $1.popclipextz
 fi
