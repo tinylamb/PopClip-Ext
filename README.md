@@ -1,14 +1,21 @@
 # Extensions for [PopClip](http://pilotmoon.com/popclip/)
 
 ##插件列表
-1. 下载豆瓣日志信息
+1. 下载豆瓣日志信息 `DoubanDiary`
 		
 	依赖包: [lxml](http://lxml.de/)
+	
+	使用  : Popclip 遇到 
+	
+		http://www.douban.com/people/[anyid]/notes
+	
+	触发.下载该id的日志信息,保存到$HOME下.
 		
-2. 下载Github代码片段
+2. 下载Github代码片段 `Github Mate`
 
 	依赖包: lxml
 	
+	用途 : 如果不想git clone 保存全部Repo的话，就用Github Mate保存代码片段.
 
 ##如何创建自己的插件
 ###参考
