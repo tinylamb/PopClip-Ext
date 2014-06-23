@@ -3,11 +3,11 @@
 ##插件列表
 1. 下载豆瓣日志信息
 		
-		依赖包: lxml
+	依赖包: [lxml](http://lxml.de/)
 		
 2. 下载Github代码片段
 
-		依赖包: lxml
+	依赖包: lxml
 	
 
 ##如何创建自己的插件
@@ -40,3 +40,4 @@ There are five main kinds of actions supported by PopClip extensions.
 ##如何发布自己的插件
 1. 修改插件源码文件后缀 plugin -> plugin.popclipext
 2. 压缩plugin.popclipext 并命名为plugin.popclipextz
+3. 或 在Source目录下执行 ./ext.sh PlugginName
