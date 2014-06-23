@@ -15,7 +15,9 @@
 
 	依赖包: lxml
 	
-	用途 : 如果不想git clone 保存全部Repo的话，就用Github Mate保存代码片段.
+	用途 : 如果不想git clone 保存全部Repo的话，就用Github Mate保存代码片段.[想法来源](https://ruby-china.org/topics/16269)
+	
+	
 
 ##如何创建自己的插件
 ###参考
@@ -47,4 +49,4 @@ There are five main kinds of actions supported by PopClip extensions.
 ##如何发布自己的插件
 1. 修改插件源码文件后缀 plugin -> plugin.popclipext
 2. 压缩plugin.popclipext 并命名为plugin.popclipextz
-3. 或 在Source目录下执行 ./ext.sh PlugginName
+3. 或 在Source目录下执行 ./ext.sh PlugginName 插件保存到Downloads中
