@@ -17,6 +17,9 @@
 	
 	用途 : 如果不想git clone 保存全部Repo的话，就用Github Mate保存代码片段.[想法来源](https://ruby-china.org/topics/16269)
 	
+3. Bing.cn Search `Bing`
+
+        墙的厉害,折衷了.
 	
 
 ##如何创建自己的插件
