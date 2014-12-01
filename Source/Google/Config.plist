@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>g.png</string>
+			<key>Regular Expression</key>
+			<string>(?s)^.{1,1900}$</string>
+			<key>Title</key>
+			<string>Google</string>
+			<key>URL</key>
+			<string>http://www.xiexingwen.com/google/sp.php?query={popclip text}</string>
+		</dict>
+	</array>
+	<key>Credits</key>
+	<array>
+		<dict>
+			<key>Link</key>
+			<string>https://github.com/tinylamb</string>
+			<key>Name</key>
+			<string>tinylamb</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Search Google Mirror with the selected text.</string>
+	<key>Extension Identifier</key>
+	<string>popclip.extension.google_mirror</string>
+	<key>Extension Name</key>
+	<string>Google</string>
+</dict>
+</plist>
