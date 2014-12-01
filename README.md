@@ -22,6 +22,10 @@
        墙的厉害,折衷了.
 	
 
+4. Google.mirror Search `Google`
+
+       墙的厉害,靠[镜像](http://www.xiexingwen.com/)了
+
 ##如何创建自己的插件
 ###参考
  
