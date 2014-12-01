@@ -15,10 +15,20 @@ EXAMPLE:
 HELP
 exit 0
 }
-if [ $# -eq 0 ] || [ $1 = "-h" ]; then
+
+ext(){
+    local source_dir=$(pwd)
+    local ext_dir=../Downloads
+    [ -e $ext_dir/"$1".popclipext ] && rm -fr $ext_dir/"$1".*
+    cp -r "$source_dir"/"$1" $ext_dir/"$1".popclipext
+    zip -r $ext_dir/"$1".popclipextz $ext_dir/"$1".popclipext
+}
+
+if [ $# -eq 0 ] || [ "$1" = "-h" ]; then
     help
 else
-    rm -fr ../Downloads/$1.*
-    cp -r $1 ../Downloads/$1.popclipext
-    zip -r ../Downloads/$1.popclipextz ../Downloads/$1.popclipext
+    ext "$1"
+    #rm -fr ../Downloads/$1.*
+    #cp -r $1 ../Downloads/$1.popclipext
+    #zip -r ../Downloads/$1.popclipextz ../Downloads/$1.popclipext
 fi
